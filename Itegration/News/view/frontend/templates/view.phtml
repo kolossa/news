@@ -1,0 +1,12 @@
+<?php $news=$block->getNews(); ?>
+
+<h2>News #<?php echo $news['news_id']; ?></h2>
+
+<table class="data-grid">
+	<?php foreach($news as $name=>$value){ ?>
+		<tr>
+			<td><?php echo $name;?></td>
+			<td><?php echo $value;?></td>
+		</tr>
+	<?php } ?>
+</table>

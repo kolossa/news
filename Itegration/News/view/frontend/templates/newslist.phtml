@@ -1,0 +1,26 @@
+<?php $newsCollection=$block->getNews(); ?>
+
+<h2>Store list</h2>
+
+<table>
+<tr>
+    <th>Title</th>
+    <th>Lead</th>
+    <th>Created</th>
+    <th>Updated</th>
+  </tr>
+<?php 
+
+foreach($newsCollection as $news){
+	?>
+	<tr>
+		<td><a href="<?php echo $this->getUrl('news/index/view', ['_query' =>['news_id'=>$news->getNewsId()]]); ?>"><?php echo $news->getTitle(); ?></a>  </td>
+		<td><?php echo $news->getLead(); ?></td>
+		<td><?php echo $news->getCreated(); ?></td>
+		<td><?php echo $news->getUpdated(); ?></td>
+	</tr>
+	<?php
+}
+?>
+</table>
+

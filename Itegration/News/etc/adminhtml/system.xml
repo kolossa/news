@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="news" translate="label" sortOrder="10">
+            <label>Itegration</label>
+        </tab>
+		<section id="itegration_news" translate="label" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+			<label>News</label>
+			<tab>news</tab>
+			<resource>Itegration_News::news_configuration</resource>
+			<group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>General Configuration</label>
+				<field id="number_of_items" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Number of items in the list</label>
+				</field>
+				<field id="items_order" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Order</label>
+					<source_model>Itegration\News\Model\Config\Order</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

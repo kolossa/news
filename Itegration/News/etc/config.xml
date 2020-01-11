@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <itegration_news>
+            <general>
+                <number_of_items>10</number_of_items>
+                <items_order>created_at_desc</items_order>
+            </general>
+        </itegration_news>
+    </default>
+</config>
